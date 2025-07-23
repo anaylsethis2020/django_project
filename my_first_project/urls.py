@@ -1,7 +1,8 @@
 from django.contrib import admin
-from django.urls import path, include  # ← Add 'include' if it's not there
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('core.urls')),  # ← This line connects your app's URLs
+    path('', include('hello_world.urls')),
+]
 ]
